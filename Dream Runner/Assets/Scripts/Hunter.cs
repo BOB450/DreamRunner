@@ -6,6 +6,7 @@ public class Hunter : MonoBehaviour
 {
     public int speed;
     public Transform player;
+    public bool move;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +16,14 @@ public class Hunter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
-        transform.Translate(Vector2.right * Time.deltaTime * speed);
-        Vector3 pos = transform.position;
+        if (move == true)
+        {
+            transform.Translate(Vector2.right * Time.deltaTime * speed);
+            Vector3 pos = transform.position;
 
-        // transform.position = player.position.y;
-        transform.position = new Vector3(pos.x, player.position.y, 0);
+            // transform.position = player.position.y;
+            transform.position = new Vector3(pos.x, player.position.y, 0);
+        }
     }
 }
