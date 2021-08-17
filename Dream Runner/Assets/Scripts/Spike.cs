@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spike : MonoBehaviour
 {
@@ -14,5 +15,16 @@ public class Spike : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("ggg");
+
+        if (collision.gameObject.tag == "player")
+        {
+            SceneManager.LoadScene(1);
+            Debug.Log("MyTag");
+        }
     }
 }

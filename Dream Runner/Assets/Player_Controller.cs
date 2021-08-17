@@ -75,11 +75,7 @@ public class Player_Controller : MonoBehaviour
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
-        // Camera follow
-        if (mainCamera)
-        {
-            mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
-        }
+   
     }
 
     void FixedUpdate()
@@ -110,4 +106,14 @@ public class Player_Controller : MonoBehaviour
         Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(0, colliderRadius, 0), isGrounded ? Color.green : Color.red);
         Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(colliderRadius, 0, 0), isGrounded ? Color.green : Color.red);
     }
+
+
+    //void LateUpdate()
+    //{
+      //  Camera follow;
+        //if (mainCamera)
+        //{
+          //  mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
+        //}
+    //}
 }
