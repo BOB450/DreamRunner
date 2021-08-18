@@ -27,4 +27,9 @@ public class Button : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void Shop()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
