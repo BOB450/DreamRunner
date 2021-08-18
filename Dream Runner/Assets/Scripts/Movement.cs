@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("speed1") == 1)
         {
-            runspeed = 100f;
+            runspeed = 90f;
             Debug.Log("speed activated");
         }
         else { runspeed = 80f; }
@@ -35,4 +35,6 @@ public class Movement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
     }
+
+
 }

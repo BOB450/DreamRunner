@@ -30,6 +30,19 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+
+	void Start()
+	{
+		if (PlayerPrefs.GetInt("jump1") == 1)
+		{
+			m_JumpForce = 1600f;
+			Debug.Log("jump activated");
+		}
+		else { m_JumpForce = 1400f; }
+	}
+
+
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
