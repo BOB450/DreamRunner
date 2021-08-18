@@ -12,6 +12,7 @@ public class CoinController : MonoBehaviour
     void Start()
     {
         coins = PlayerPrefs.GetInt("NumCoins");
+
     }
 
     // Update is called once per frame

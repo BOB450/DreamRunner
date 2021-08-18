@@ -29,4 +29,20 @@ public class shop : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void Speed1()
+    {
+        Debug.Log("pressed");
+        if (PlayerPrefs.GetInt("speed1") == 0)
+        {
+
+            if (cointext >= 1)
+            {
+                cointext = cointext - 1;
+                PlayerPrefs.SetInt("NumCoins", cointext);
+                PlayerPrefs.SetInt("speed1", 1);
+                Debug.Log("speed1");
+            }
+        }
+    }
 }
