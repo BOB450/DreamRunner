@@ -52,9 +52,9 @@ public class shop : MonoBehaviour
         if (PlayerPrefs.GetInt("jump1") == 0)
         {
 
-            if (cointext >= 3)
+            if (cointext >= 2)
             {
-                cointext = cointext - 3;
+                cointext = cointext - 2;
                 PlayerPrefs.SetInt("NumCoins", cointext);
                 PlayerPrefs.SetInt("jump1", 1);
                 Debug.Log("jump1");
