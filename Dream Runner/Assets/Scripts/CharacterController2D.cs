@@ -12,7 +12,7 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
 
-	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
+	const float k_GroundedRadius = .35f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
@@ -35,10 +35,10 @@ public class CharacterController2D : MonoBehaviour
 	{
 		if (PlayerPrefs.GetInt("jump1") == 1)
 		{
-			m_JumpForce = 1600f;
+			m_JumpForce = 2400f;
 			Debug.Log("jump activated");
 		}
-		else { m_JumpForce = 1400f; }
+		else { m_JumpForce = 2000f; }
 	}
 
 
@@ -71,6 +71,7 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+
 	}
 
 

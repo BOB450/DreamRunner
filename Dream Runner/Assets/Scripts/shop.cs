@@ -36,9 +36,9 @@ public class shop : MonoBehaviour
         if (PlayerPrefs.GetInt("speed1") == 0)
         {
 
-            if (cointext >= 1)
+            if (cointext >= 3)
             {
-                cointext = cointext - 1;
+                cointext = cointext - 3;
                 PlayerPrefs.SetInt("NumCoins", cointext);
                 PlayerPrefs.SetInt("speed1", 1);
                 Debug.Log("speed1");
@@ -52,14 +52,31 @@ public class shop : MonoBehaviour
         if (PlayerPrefs.GetInt("jump1") == 0)
         {
 
-            if (cointext >= 2)
+            if (cointext >= 3)
             {
-                cointext = cointext - 2;
+                cointext = cointext - 3;
                 PlayerPrefs.SetInt("NumCoins", cointext);
                 PlayerPrefs.SetInt("jump1", 1);
                 Debug.Log("jump1");
             }
         }
     }
+
+    public void Dash1()
+    {
+        Debug.Log("pressed");
+        if (PlayerPrefs.GetInt("dash1") == 0)
+        {
+
+            if (cointext >= 5)
+            {
+                cointext = cointext - 5;
+                PlayerPrefs.SetInt("NumCoins", cointext);
+                PlayerPrefs.SetInt("dash1", 1);
+                Debug.Log("dash1");
+            }
+        }
+    }
+
 
 }
