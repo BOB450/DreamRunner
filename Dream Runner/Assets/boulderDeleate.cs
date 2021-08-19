@@ -20,7 +20,7 @@ public class boulderDeleate : MonoBehaviour
     }
     IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(12f);
+        yield return new WaitForSeconds(30f);
         Destroy(gameObject);
     }
 
