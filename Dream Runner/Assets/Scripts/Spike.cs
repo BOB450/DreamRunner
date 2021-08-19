@@ -23,7 +23,7 @@ public class Spike : MonoBehaviour
 
         if (collision.gameObject.tag == "player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             Debug.Log("MyTag");
         }
     }

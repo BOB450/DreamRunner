@@ -23,7 +23,7 @@ public class door : MonoBehaviour
 
         if (collision.gameObject.tag == "player")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
             
         }
     }

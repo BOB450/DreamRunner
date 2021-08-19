@@ -49,7 +49,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         ispaused = false;
 
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()

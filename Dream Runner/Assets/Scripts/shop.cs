@@ -27,7 +27,7 @@ public class shop : MonoBehaviour
 
     public void Back()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
     }
 
     public void Speed1()
