@@ -7,7 +7,7 @@ public class CoinController : MonoBehaviour
 {
     public Text txt;
     public int coins;
-    
+    public AudioManger other;
     // Start is called before the first frame update
     void Start()
     {
@@ -98,7 +98,7 @@ public class CoinController : MonoBehaviour
         if (collision.gameObject.tag == "coin")
         {
 
-            
+            other.CoinSound();
             coins = coins + 1;
             PlayerPrefs.SetInt("NumCoins", coins);
            // Debug.Log(coins);
@@ -109,36 +109,42 @@ public class CoinController : MonoBehaviour
             if (collision.gameObject.name == "coin")
             {
                 PlayerPrefs.SetInt("coin", 1);
+                other.CoinSound();
                 Debug.Log("yay");
             }
 
             if (collision.gameObject.name == "coin (1)")
             {
                 PlayerPrefs.SetInt("coin (1)", 1);
+                other.CoinSound();
                 Debug.Log("yay1");
             }
 
             if (collision.gameObject.name == "coin (2)")
             {
                 PlayerPrefs.SetInt("coin (2)", 1);
+                other.CoinSound();
                 Debug.Log("yay1");
             }
 
             if (collision.gameObject.name == "coin (3)")
             {
                 PlayerPrefs.SetInt("coin (3)", 1);
+                other.CoinSound();
                 Debug.Log("yay1");
             }
 
             if (collision.gameObject.name == "coin (4)")
             {
                 PlayerPrefs.SetInt("coin (4)", 1);
+                other.CoinSound();
                 Debug.Log("yay1");
             }
 
             if (collision.gameObject.name == "coin (5)")
             {
                 PlayerPrefs.SetInt("coin (5)", 1);
+                other.CoinSound();
                 Debug.Log("yay1");
             }
             //--------------------------------------------------------------------------------------------------------------------

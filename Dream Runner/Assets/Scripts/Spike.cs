@@ -19,7 +19,7 @@ public class Spike : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("ggg");
+       // Debug.Log("ggg");
 
         if (collision.gameObject.tag == "player")
         {

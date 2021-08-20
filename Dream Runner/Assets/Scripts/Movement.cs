@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public float runspeed = 80f;
     public float horizontalMove = 0f;
     bool jump = false;
+    public AudioManger other;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,8 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+           // other.JumpSound();
+
         }
     }
     void FixedUpdate()
