@@ -87,6 +87,17 @@ public class CoinController : MonoBehaviour
             }
         }
 
+        if (PlayerPrefs.GetInt("coin (6)") == 1)
+        {
+            GameObject go = GameObject.Find("coin (6)");
+            //if the coin exist then destroy it
+            if (go)
+            {
+                Destroy(go.gameObject);
+                Debug.Log(name + "has been destroyed.");
+            }
+        }
+
         //----------------------------------------------------------------------------------------------------------------------
     }
     
@@ -144,6 +155,13 @@ public class CoinController : MonoBehaviour
             if (collision.gameObject.name == "coin (5)")
             {
                 PlayerPrefs.SetInt("coin (5)", 1);
+                other.CoinSound();
+                Debug.Log("yay1");
+            }
+
+            if (collision.gameObject.name == "coin (6)")
+            {
+                PlayerPrefs.SetInt("coin (6)", 1);
                 other.CoinSound();
                 Debug.Log("yay1");
             }
