@@ -39961,6 +39961,10 @@ PrefabInstance:
       propertyPath: other
       value: 
       objectReference: {fileID: 615324346}
+    - target: {fileID: 2465445676979014704, guid: f18dd202c33e4c74a95dcda124252b74, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2465445676979014707, guid: f18dd202c33e4c74a95dcda124252b74, type: 3}
       propertyPath: m_RootOrder
       value: 4

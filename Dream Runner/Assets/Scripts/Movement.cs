@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
            // other.JumpSound();
 
         }
+        
     }
     void FixedUpdate()
     {

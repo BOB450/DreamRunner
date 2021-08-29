@@ -11,7 +11,7 @@ public class Player_Controller : MonoBehaviour
     public float maxSpeed = 3.4f;
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
-    public Camera mainCamera;
+ 
 
     bool facingRight = true;
     float moveDirection = 0;
@@ -32,10 +32,7 @@ public class Player_Controller : MonoBehaviour
         r2d.gravityScale = gravityScale;
         facingRight = t.localScale.x > 0;
 
-        if (mainCamera)
-        {
-            cameraPos = mainCamera.transform.position;
-        }
+
     }
 
     // Update is called once per frame

@@ -13,7 +13,7 @@ public class camfolow2 : MonoBehaviour
         transform.position = player.position + cameraOffset;
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         Vector3 finalPosition = player.position + cameraOffset;
         Vector3 lerpPosition = Vector3.Lerp(transform.position, finalPosition, cameraSpeed);
