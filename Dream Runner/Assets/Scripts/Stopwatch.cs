@@ -17,7 +17,7 @@ public class Stopwatch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.SetInt("time", num);
+        //PlayerPrefs.SetInt("time", num);
     }
     void addscore()
     {
@@ -28,5 +28,7 @@ public class Stopwatch : MonoBehaviour
 
 
         scoretxt.text = stringmy;
+
+        PlayerPrefs.SetInt("time", num);
     }
 }
