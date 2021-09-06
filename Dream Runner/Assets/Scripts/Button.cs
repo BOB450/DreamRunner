@@ -7,12 +7,18 @@ public class Button : MonoBehaviour
 {
 
     public GameObject star1;
+    public GameObject star2;
     // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.GetInt("chapter1") == 1)
         {
             star1.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("chapter2") == 1)
+        {
+            star2.SetActive(true);
         }
     }
 
