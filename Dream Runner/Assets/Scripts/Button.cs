@@ -39,4 +39,11 @@ public class Button : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
+
+
+    public void Restart2()
+    {
+        SceneManager.LoadScene(5);
+    }
+
 }
