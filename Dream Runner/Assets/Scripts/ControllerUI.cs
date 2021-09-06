@@ -23,5 +23,11 @@ public class ControllerUI : MonoBehaviour
             print("joystick 1 button ");
         }
 
+        if (Input.GetKeyDown("joystick button 1"))
+        {
+            SceneManager.LoadScene(5);
+            print("joystick 1 button ");
+        }
+
     }
 }
