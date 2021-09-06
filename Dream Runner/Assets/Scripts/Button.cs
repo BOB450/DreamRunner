@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
-    
-    
+
+    public GameObject star1;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerPrefs.GetInt("chapter1") == 1)
+        {
+            star1.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -44,6 +47,12 @@ public class Button : MonoBehaviour
     public void Restart2()
     {
         SceneManager.LoadScene(5);
+    }
+
+
+    public void menu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 }

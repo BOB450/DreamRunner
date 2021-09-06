@@ -23,7 +23,11 @@ public class door : MonoBehaviour
 
         if (collision.gameObject.tag == "player")
         {
+
+            PlayerPrefs.SetInt("chapter1", 1);
             SceneManager.LoadScene(3);
+
+
             
         }
     }
